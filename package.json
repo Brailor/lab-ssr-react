@@ -1,0 +1,26 @@
+{
+  "name": "lab-ssr-react",
+  "version": "0.0.1",
+  "description": "React ssr lab.",
+  "main": "dist/index.js",
+  "author": "Viktor Ohad",
+  "license": "MIT",
+  "scripts": {
+    "build": "tsc",
+    "start": "nodemon -w dist -w . -e js,ts,jsx,tsx,html",
+    "bundle": "esbuild --bundle src/client/index.tsx --outfile=dist/client/bundle.js --tree-shaking=true"
+  },
+  "dependencies": {
+    "@instructure/ui": "^8.14.0",
+    "express": "^4.17.2",
+    "nodemon": "^2.0.15",
+    "react": "^17.0.2",
+    "react-dom": "^17.0.2"
+  },
+  "devDependencies": {
+    "@types/node": "^17.0.7",
+    "@types/react-dom": "^17.0.11",
+    "esbuild": "^0.14.10",
+    "typescript": "^4.5.4"
+  }
+}
